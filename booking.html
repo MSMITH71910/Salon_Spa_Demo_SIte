@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Luxe Beauty Studio | Columbus, OH</title>
+  <meta name="description" content="Book your appointment at Luxe Beauty Studio online in 60 seconds. Hair, facials, massage, nails, bridal — 7 days a week in Columbus, OH." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item"><i class="fas fa-map-marker-alt"></i><span>2847 Lakeside Blvd, Columbus, OH 43210</span></div>
+        <div class="top-bar-item"><i class="fas fa-clock"></i><span>Mon–Fri 9AM–8PM | Sat 8AM–7PM | Sun 10AM–5PM</span></div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item"><i class="fas fa-star" style="color:#fbbf24"></i><span>4.9/5 Stars — 680+ Reviews</span></div>
+        <div class="top-bar-item"><a href="tel:5558742190"><i class="fas fa-phone"></i> (555) 874-2190</a></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-emblem"><i class="fas fa-spa" style="color:var(--gold-light)"></i></div>
+        <div><div class="logo-text-main">Luxe Beauty</div><span class="logo-text-sub">Studio &amp; Spa</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="stylists.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="membership.html">Memberships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-cta active"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Book Appointment</span></div>
+      <div class="section-label"><i class="fas fa-calendar-check"></i> Online Booking</div>
+      <h1>Book Your Appointment</h1>
+      <p>Fill out the form below and we'll confirm your appointment within 1 hour during business hours.</p>
+    </div>
+  </div>
+
+  <section class="booking-section">
+    <div class="container">
+      <div class="booking-grid">
+
+        <!-- BOOKING FORM -->
+        <div class="booking-form-card">
+          <h2>Request Your Appointment</h2>
+          <p>Choose your service, stylist, and preferred time. We'll send a confirmation SMS right away.</p>
+          <form id="bookingForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">First Name *</label>
+                <input class="form-input" type="text" name="clientName" placeholder="Sarah" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name *</label>
+                <input class="form-input" type="text" name="clientLast" placeholder="Johnson" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input class="form-input" type="tel" placeholder="(614) 555-0000" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input class="form-input" type="email" placeholder="sarah@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Select Service *</label>
+              <div class="service-picker">
+                <div class="service-pick-card" data-service="Hair Color / Balayage">
+                  <i class="fas fa-palette"></i><span>Hair Color / Balayage</span>
+                </div>
+                <div class="service-pick-card" data-service="Haircut & Blowout">
+                  <i class="fas fa-cut"></i><span>Haircut &amp; Blowout</span>
+                </div>
+                <div class="service-pick-card" data-service="Facial">
+                  <i class="fas fa-smile"></i><span>Facial</span>
+                </div>
+                <div class="service-pick-card" data-service="Massage">
+                  <i class="fas fa-spa"></i><span>Massage</span>
+                </div>
+                <div class="service-pick-card" data-service="Nails / Nail Art">
+                  <i class="fas fa-hand-sparkles"></i><span>Nails / Nail Art</span>
+                </div>
+                <div class="service-pick-card" data-service="Bridal / Special Event">
+                  <i class="fas fa-ring"></i><span>Bridal / Event</span>
+                </div>
+              </div>
+              <input type="hidden" id="selectedService" name="service" value="" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Preferred Stylist</label>
+              <select class="form-select" name="stylist">
+                <option value="">No preference — assign best available</option>
+                <option value="sophia">Sophia Laurent (Color Director)</option>
+                <option value="jade">Jade Williams (Balayage)</option>
+                <option value="elena">Elena Rossi (Skincare)</option>
+                <option value="marcus">Marcus Bell (Cuts & Style)</option>
+                <option value="priya">Priya Sharma (Massage)</option>
+                <option value="chloe">Chloe Davis (Nails)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Preferred Date *</label>
+                <input class="form-input" type="date" name="apptDate" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Time *</label>
+                <select class="form-select" name="apptTime" required>
+                  <option value="">Select time</option>
+                  <option>9:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>1:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>3:00 PM</option>
+                  <option>4:00 PM</option>
+                  <option>5:00 PM</option>
+                  <option>6:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Notes for Your Stylist</label>
+              <textarea class="form-textarea" name="notes" placeholder="Any specific goals, concerns, or inspiration photos to share…"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display:flex; gap:0.5rem; align-items:flex-start; cursor:pointer; font-size:0.85rem; color:var(--gray-600);">
+                <input type="checkbox" required style="margin-top:3px; accent-color:var(--gold);" />
+                I agree to the <a href="#" style="color:var(--gold-dark);">cancellation policy</a> — 24-hour notice required for cancellations or rescheduling.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center; padding:1.1rem;"><i class="fas fa-calendar-check"></i> Request My Appointment</button>
+            <p class="form-note"><i class="fas fa-shield-alt"></i> Your info is private and will never be shared. SMS confirmation sent instantly.</p>
+          </form>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="booking-sidebar">
+          <div class="book-sidebar-card">
+            <h3>What Happens Next</h3>
+            <div class="book-feature"><i class="fas fa-check-circle"></i><span><strong>Step 1:</strong> We receive your request instantly.</span></div>
+            <div class="book-feature"><i class="fas fa-comment-sms"></i><span><strong>Step 2:</strong> SMS confirmation sent within 1 hour.</span></div>
+            <div class="book-feature"><i class="fas fa-bell"></i><span><strong>Step 3:</strong> 24-hour reminder sent before your appointment.</span></div>
+            <div class="book-feature"><i class="fas fa-spa"></i><span><strong>Step 4:</strong> Come in, relax, and let us take care of you.</span></div>
+          </div>
+
+          <div class="appt-seq">
+            <h4>Automated Appointment Sequence</h4>
+            <div class="aseq-item">
+              <div class="aseq-dot">1</div>
+              <div class="aseq-content">
+                <div class="aseq-time">Immediately</div>
+                <h5>Booking Confirmation SMS</h5>
+                <p style="font-size:0.78rem;">Instant text with your appointment details.</p>
+              </div>
+            </div>
+            <div class="aseq-item">
+              <div class="aseq-dot">2</div>
+              <div class="aseq-content">
+                <div class="aseq-time">24 Hours Before</div>
+                <h5>Appointment Reminder</h5>
+                <p style="font-size:0.78rem;">SMS reminder with confirm/reschedule option.</p>
+              </div>
+            </div>
+            <div class="aseq-item">
+              <div class="aseq-dot">3</div>
+              <div class="aseq-content">
+                <div class="aseq-time">After Appointment</div>
+                <h5>Post-Visit Review Request</h5>
+                <p style="font-size:0.78rem;">Google review link sent via SMS + email.</p>
+              </div>
+            </div>
+            <div class="aseq-item">
+              <div class="aseq-dot muted">4</div>
+              <div class="aseq-content">
+                <div class="aseq-time">60 Days Later (if no rebooking)</div>
+                <h5>Reactivation Offer</h5>
+                <p style="font-size:0.78rem;">Personalized "we miss you" email with 20% off.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-sidebar-card" style="background:white; border:2px solid var(--gray-200); color:var(--dark);">
+            <h3 style="color:var(--plum);">Studio Hours</h3>
+            <div class="book-feature" style="color:var(--gray-600);"><i class="fas fa-calendar-day" style="color:var(--gold-dark)"></i><span>Monday – Friday: 9:00 AM – 8:00 PM</span></div>
+            <div class="book-feature" style="color:var(--gray-600);"><i class="fas fa-calendar-week" style="color:var(--gold-dark)"></i><span>Saturday: 8:00 AM – 7:00 PM</span></div>
+            <div class="book-feature" style="color:var(--gray-600);"><i class="fas fa-sun" style="color:var(--gold-dark)"></i><span>Sunday: 10:00 AM – 5:00 PM</span></div>
+            <div class="book-feature" style="color:var(--gray-600);"><i class="fas fa-phone" style="color:var(--gold-dark)"></i><span><a href="tel:5558742190" style="color:var(--plum);">(555) 874-2190</a></span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="container">
+      <h2>Prefer to Call?</h2>
+      <p>Our front desk team is happy to assist with booking, questions, or gift cards.</p>
+      <div class="cta-buttons">
+        <a href="tel:5558742190" class="btn btn-gold btn-lg"><i class="fas fa-phone"></i> (555) 874-2190</a>
+        <a href="services.html" class="btn btn-outline btn-lg"><i class="fas fa-list"></i> View All Services</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="nav-logo" style="margin-bottom:1rem;"><div class="logo-emblem"><i class="fas fa-spa" style="color:var(--gold-light)"></i></div><div><div class="logo-text-main" style="color:white;">Luxe Beauty</div><span class="logo-text-sub">Studio &amp; Spa</span></div></div><p>Columbus's premier full-service salon and spa since 2012.</p><div class="footer-social"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i class="fab fa-facebook"></i></a><a href="#" class="social-link"><i class="fab fa-tiktok"></i></a></div></div>
+        <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services.html"><i class="fas fa-chevron-right"></i> Hair Color & Cuts</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i> Facials & Skincare</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i> Massage Therapy</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i> Nails & Nail Art</a></li></ul></div>
+        <div class="footer-col"><h4>Studio</h4><ul class="footer-links"><li><a href="stylists.html"><i class="fas fa-chevron-right"></i> Our Team</a></li><li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li><li><a href="membership.html"><i class="fas fa-chevron-right"></i> Memberships</a></li><li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>2847 Lakeside Blvd, Columbus, OH 43210</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:5558742190">(555) 874-2190</a></div><div class="footer-cta-box" style="margin-top:1rem;"><p>Need help?</p><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></div></div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><span>© 2024 Luxe Beauty Studio &amp; Spa — Columbus, OH | <em>Demo Site</em></span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Cancellation Policy</a></div></div></div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="bookingConfirmModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-icon success"><i class="fas fa-check"></i></div>
+      <h3>Appointment Requested!</h3>
+      <p>Thank you, <strong class="conf-name">Sarah</strong>! Your appointment request has been received. We'll send a confirmation SMS within 1 hour.</p>
+      <div class="modal-box">
+        <h4>Appointment Summary</h4>
+        <div class="conf-row"><i class="fas fa-spa"></i><span>Service: <strong class="conf-service">Balayage</strong></span></div>
+        <div class="conf-row"><i class="fas fa-calendar"></i><span>Date &amp; Time: <strong class="conf-date">TBD</strong></span></div>
+        <div class="conf-row"><i class="fas fa-map-marker-alt"></i><span>2847 Lakeside Blvd, Columbus, OH 43210</span></div>
+      </div>
+      <div class="sms-preview">
+        <i class="fas fa-comment-sms"></i>
+        <span>"Appointment confirmed! 💜 See you at Luxe Beauty Studio. Reply H for help or call (555) 874-2190 to reschedule. We can't wait to see you! — The Luxe Team 🌸"</span>
+      </div>
+      <button class="btn btn-gold" onclick="closeModal('bookingConfirmModal')"><i class="fas fa-spa"></i> See You Then!</button>
+    </div>
+  </div>
+
+  <button class="chatbot-toggle" aria-label="Chat with Aria"><i class="fas fa-spa"></i><div class="chatbot-badge" style="display:none;">1</div></button>
+  <div class="chatbot-window">
+    <div class="chatbot-header"><div class="chatbot-avatar">🌸</div><div class="chatbot-header-info"><h4>Aria — Beauty Concierge</h4><p><span class="online-dot"></span> Online now</p></div><button class="chatbot-close"><i class="fas fa-times"></i></button></div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-quick-replies"></div>
+    <div class="chatbot-input-area"><input class="chatbot-input" type="text" placeholder="Need help booking?" /><button class="chatbot-send"><i class="fas fa-paper-plane"></i></button></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

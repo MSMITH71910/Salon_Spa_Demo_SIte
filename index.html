@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxe Beauty Studio | Columbus, OH | Salon & Spa</title>
+  <meta name="description" content="Luxe Beauty Studio — Columbus's premier salon and spa. Expert hair color, cuts, facials, massage, nails, and bridal services. AI booking chatbot. Call (555) 874-2190." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item"><i class="fas fa-map-marker-alt"></i><span>2847 Lakeside Blvd, Columbus, OH 43210</span></div>
+        <div class="top-bar-item"><i class="fas fa-clock"></i><span>Mon–Fri 9AM–8PM | Sat 8AM–7PM | Sun 10AM–5PM</span></div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item"><i class="fas fa-star" style="color:#fbbf24"></i><span>4.9/5 Stars — 680+ Google Reviews</span></div>
+        <div class="top-bar-item"><a href="tel:5558742190"><i class="fas fa-phone"></i> (555) 874-2190</a></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-emblem"><i class="fas fa-spa" style="color:var(--gold-light)"></i></div>
+        <div>
+          <div class="logo-text-main">Luxe Beauty</div>
+          <span class="logo-text-sub">Studio &amp; Spa</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="stylists.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="membership.html">Memberships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-cta"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span>Columbus's Premier Salon &amp; Spa</span>
+        <div class="hero-eyebrow-line"></div>
+      </div>
+      <h1>Where Beauty<br>Meets <em>Pure Luxury</em></h1>
+      <p class="hero-desc">Indulge in expert hair color, transformative skincare, and full-body relaxation. Your most beautiful self is waiting — and we're here to help you find her.</p>
+      <div class="hero-buttons">
+        <a href="booking.html" class="btn btn-gold btn-lg"><i class="fas fa-calendar-check"></i> Book Your Appointment</a>
+        <a href="services.html" class="btn btn-outline btn-lg"><i class="fas fa-spa"></i> Explore Services</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><i class="fas fa-award"></i> 12+ Years of Excellence</div>
+        <div class="hero-trust-item"><i class="fas fa-star"></i> 680+ 5-Star Reviews</div>
+        <div class="hero-trust-item"><i class="fas fa-users"></i> 3,800+ Happy Clients</div>
+        <div class="hero-trust-item"><i class="fas fa-leaf"></i> Eco-Friendly Products</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section style="background:var(--cream);">
+    <div class="container text-center">
+      <div class="section-label"><i class="fas fa-spa"></i> Our Offerings</div>
+      <h2 class="section-title">Luxury Services, Tailored to You</h2>
+      <p class="section-subtitle">From bold color transformations to tranquil spa days — every service is crafted with expert precision and genuine care.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-cut" style="color:var(--plum)"></i></div>
+          <h3>Hair Color & Cuts</h3>
+          <p>Balayage, highlights, full color, and precision cuts tailored to your face shape and lifestyle.</p>
+          <div class="price-range">From $55 — Cuts | From $85 — Color</div>
+          <a href="services.html" class="card-link">Explore hair services <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-smile" style="color:var(--plum)"></i></div>
+          <h3>Facials & Skincare</h3>
+          <p>Signature glow facials, chemical peels, microdermabrasion, and anti-aging treatments.</p>
+          <div class="price-range">From $85 per session</div>
+          <a href="services.html" class="card-link">Explore skin services <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-spa" style="color:var(--plum)"></i></div>
+          <h3>Massage Therapy</h3>
+          <p>Swedish, deep tissue, hot stone, prenatal, and couples massage in a tranquil private suite.</p>
+          <div class="price-range">From $95 per session</div>
+          <a href="services.html" class="card-link">Explore massage <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-hand-sparkles" style="color:var(--plum)"></i></div>
+          <h3>Nails & Nail Art</h3>
+          <p>Classic and gel manicures, spa pedicures, acrylic sets, and custom nail art designs.</p>
+          <div class="price-range">From $35 — Manicure</div>
+          <a href="services.html" class="card-link">Explore nail services <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-ring" style="color:var(--plum)"></i></div>
+          <h3>Bridal Packages</h3>
+          <p>Full bridal party packages including hair, makeup, trials, and on-location options for your big day.</p>
+          <div class="price-range">From $450 — Bridal Package</div>
+          <a href="services.html" class="card-link">Bridal details <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-crown" style="color:var(--plum)"></i></div>
+          <h3>VIP Memberships</h3>
+          <p>Monthly membership programs with exclusive discounts, priority booking, and member-only perks.</p>
+          <div class="price-range">From $49/month</div>
+          <a href="membership.html" class="card-link">Join the club <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-num">12+</span>
+          <div class="stat-label">Years in Business</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3,800+</span>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4.9★</span>
+          <div class="stat-label">Google Rating</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">680+</span>
+          <div class="stat-label">5-Star Reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM PREVIEW -->
+  <section>
+    <div class="container text-center">
+      <div class="section-label"><i class="fas fa-users"></i> Meet Our Artists</div>
+      <h2 class="section-title">Talent That Speaks for Itself</h2>
+      <p class="section-subtitle">Our team brings decades of combined experience, ongoing education, and a true passion for transformative beauty.</p>
+      <div class="stylists-grid">
+        <div class="stylist-card">
+          <div class="stylist-img">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80" alt="Sophia Laurent — Color Director" />
+            <div class="stylist-specialty">Color Director</div>
+          </div>
+          <div class="stylist-body">
+            <h3>Sophia Laurent</h3>
+            <div class="stylist-years">12 Years Experience</div>
+            <p>Master colorist specializing in balayage, color correction, and vivid fashion shades. Sophia's work has been featured in Columbus Monthly.</p>
+          </div>
+        </div>
+        <div class="stylist-card">
+          <div class="stylist-img">
+            <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=600&q=80" alt="Jade Williams — Balayage Specialist" />
+            <div class="stylist-specialty">Balayage Specialist</div>
+          </div>
+          <div class="stylist-body">
+            <h3>Jade Williams</h3>
+            <div class="stylist-years">8 Years Experience</div>
+            <p>Jade is our go-to for seamless, sun-kissed balayage. Her clientele book out 6 weeks in advance for good reason.</p>
+          </div>
+        </div>
+        <div class="stylist-card">
+          <div class="stylist-img">
+            <img src="https://images.unsplash.com/photo-1580618432135-b0e70c085c4f?auto=format&fit=crop&w=600&q=80" alt="Elena Rossi — Skincare Expert" />
+            <div class="stylist-specialty">Skincare Expert</div>
+          </div>
+          <div class="stylist-body">
+            <h3>Elena Rossi</h3>
+            <div class="stylist-years">10 Years Experience</div>
+            <p>Licensed esthetician and holistic skincare educator. Elena creates customized facial protocols for every skin type and concern.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="stylists.html" class="btn btn-primary btn-lg"><i class="fas fa-users"></i> Meet the Full Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOMATION BAND -->
+  <div class="automation-band">
+    <div class="container text-center" style="margin-bottom:3rem;">
+      <div class="section-label"><i class="fas fa-robot"></i> Powered by Smart Automation</div>
+      <h2 style="color:white; margin-bottom:0.5rem;">Beauty Tech That Works for You</h2>
+      <p style="color:rgba(255,255,255,0.55); max-width:560px; margin:0 auto;">Our studio uses cutting-edge AI tools to keep you informed, engaged, and coming back — without the hassle.</p>
+    </div>
+    <div class="container">
+      <div class="automation-grid">
+        <div class="auto-card">
+          <div class="auto-card-icon"><i class="fas fa-bell"></i></div>
+          <h3>24-Hour Reminder</h3>
+          <p>Forget the no-show? Never again. Every client gets an automated SMS reminder 24 hours before their appointment.</p>
+          <div class="auto-card-preview">"Hi Sarah! 💜 Just a reminder you have a Balayage appointment tomorrow at 2:00 PM with Sophia at Luxe Beauty Studio. Reply C to confirm or call (555) 874-2190 to reschedule."</div>
+        </div>
+        <div class="auto-card">
+          <div class="auto-card-icon"><i class="fas fa-star"></i></div>
+          <h3>Post-Visit Review Request</h3>
+          <p>24 hours after your appointment, we send a personalized review request via SMS + email. 680+ 5-star reviews and counting.</p>
+          <div class="auto-card-preview">"Hi Sarah! We hope you're loving your new look ✨ Would you mind leaving us a quick Google review? It means the world to us: [Google Review Link] — The Luxe Team 💜"</div>
+        </div>
+        <div class="auto-card">
+          <div class="auto-card-icon"><i class="fas fa-heart"></i></div>
+          <h3>Lapsed Client Reactivation</h3>
+          <p>If we haven't seen you in 60 days, you receive a personalized "we miss you" email with an exclusive returning-client offer.</p>
+          <div class="auto-card-preview">"We miss you, Sarah! 🌸 It's been a while since your last visit. Come back and enjoy 20% off your next service — valid for the next 2 weeks. Your hair deserves some love!"</div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center" style="margin-top:3rem;">
+      <button class="btn btn-gold btn-lg" onclick="window.openModal('lapsedModal')"><i class="fas fa-heart"></i> See Reactivation Email Demo</button>
+      <button class="btn btn-outline btn-lg" style="margin-left:1rem;" onclick="window.openModal('reviewRequestModal')"><i class="fas fa-star"></i> See Review Request Demo</button>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container text-center">
+      <div class="section-label"><i class="fas fa-star"></i> Client Love</div>
+      <h2 class="section-title">What Our Clients Are Saying</h2>
+      <p class="section-subtitle">680+ five-star reviews and counting. Here's what keeps our clients coming back.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="test-text">"Sophia is an absolute genius with color. I came in with a box-dye disaster and left with the most stunning, natural-looking balayage. Worth every penny and then some."</p>
+          <div class="test-author">
+            <img class="test-avatar" src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=80&q=80" alt="Amanda T." />
+            <div><div class="test-name">Amanda T.</div><div class="test-service">Balayage + Toner</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="test-text">"Elena completely transformed my skin. After just 3 sessions with her anti-aging facial protocol, my coworkers started asking what I was doing differently. I can't recommend her enough!"</p>
+          <div class="test-author">
+            <img class="test-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80" alt="Kristin M." />
+            <div><div class="test-name">Kristin M.</div><div class="test-service">Anti-Aging Facial Series</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="test-text">"The bridal package was flawless. Sophia did my hair, makeup, AND all 6 bridesmaids — and everything stayed perfect for 14 hours. Luxe made my wedding day absolutely perfect."</p>
+          <div class="test-author">
+            <img class="test-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Jessica L." />
+            <div><div class="test-name">Jessica L.</div><div class="test-service">Full Bridal Party Package</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band">
+    <div class="container">
+      <div class="section-label"><i class="fas fa-calendar-check"></i> Ready to Glow?</div>
+      <h2>Your Transformation Starts Today</h2>
+      <p>Book your appointment online in 60 seconds or call us — our team is here and ready to create something beautiful for you.</p>
+      <div class="cta-buttons">
+        <a href="booking.html" class="btn btn-gold btn-lg"><i class="fas fa-calendar-check"></i> Book Online Now</a>
+        <a href="tel:5558742190" class="btn btn-outline btn-lg"><i class="fas fa-phone"></i> Call (555) 874-2190</a>
+        <a href="membership.html" class="btn btn-outline btn-lg"><i class="fas fa-crown"></i> Join as VIP</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:1rem;">
+            <div class="logo-emblem"><i class="fas fa-spa" style="color:var(--gold-light)"></i></div>
+            <div><div class="logo-text-main" style="color:white;">Luxe Beauty</div><span class="logo-text-sub">Studio &amp; Spa</span></div>
+          </div>
+          <p>Columbus's premier full-service salon and spa since 2012. We believe every client deserves to feel extraordinary.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Hair Color & Balayage</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Haircuts & Blowouts</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Facials & Skincare</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Massage Therapy</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Nails & Nail Art</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Bridal Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="booking.html"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
+            <li><a href="stylists.html"><i class="fas fa-chevron-right"></i> Meet Our Team</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Photo Gallery</a></li>
+            <li><a href="membership.html"><i class="fas fa-chevron-right"></i> Memberships</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>2847 Lakeside Blvd<br>Columbus, OH 43210</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:5558742190">(555) 874-2190</a></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:hello@luxebeautystudio.com">hello@luxebeautystudio.com</a></div>
+          <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Fri 9AM–8PM<br>Sat 8AM–7PM | Sun 10AM–5PM</span></div>
+          <div class="footer-cta-box" style="margin-top:1rem;">
+            <p>Ready to glow?</p>
+            <a href="booking.html"><i class="fas fa-calendar-check"></i> Book Your Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2024 Luxe Beauty Studio &amp; Spa — Columbus, OH | License OH-COS-48192 | <em>Demo Site</em></span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <button class="chatbot-toggle" aria-label="Chat with Aria">
+    <i class="fas fa-spa"></i>
+    <div class="chatbot-badge" style="display:none;">1</div>
+  </button>
+  <div class="chatbot-window">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">🌸</div>
+      <div class="chatbot-header-info">
+        <h4>Aria — Beauty Concierge</h4>
+        <p><span class="online-dot"></span> Online now · Luxe Beauty Studio</p>
+      </div>
+      <button class="chatbot-close" onclick="document.querySelector('.chatbot-window').classList.remove('open')"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-messages"></div>
+    <div class="chatbot-quick-replies"></div>
+    <div class="chatbot-input-area">
+      <input class="chatbot-input" type="text" placeholder="Ask about services, booking, pricing…" />
+      <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+  <div id="reviewRequestModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-icon gold"><i class="fas fa-star"></i></div>
+      <h3>Review Request Sent!</h3>
+      <p>24 hours after your appointment, this automated SMS is sent to every client.</p>
+      <div class="sms-preview">
+        <i class="fas fa-comment-sms"></i>
+        <span>"Hi Sarah! 💜 We hope you're loving your new look! If you have a moment, we'd truly appreciate a Google review — it helps us continue to grow and serve clients like you.<br><br>Leave us a ⭐⭐⭐⭐⭐ here: [Link]<br><br>Thank you so much! — The Luxe Team 🌸"</span>
+      </div>
+      <button class="btn btn-gold" onclick="closeModal('reviewRequestModal')">Got It!</button>
+    </div>
+  </div>
+
+  <div id="lapsedModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-icon rose"><i class="fas fa-heart"></i></div>
+      <h3>We Miss You, Beautiful!</h3>
+      <p>Triggered automatically after 60 days of inactivity — sent via email and SMS.</p>
+      <div class="sms-preview" style="background:#fdf4ff; border-color:#e9d5ff;">
+        <i class="fas fa-envelope" style="color:#9333ea;"></i>
+        <span>"Hi Sarah! 🌸 We noticed it's been a little while since your last visit to Luxe Beauty Studio — and we miss you!\n\nAs a special welcome-back gift, enjoy <strong>20% off your next service</strong>. Valid for the next 14 days.\n\nBook online anytime: [Booking Link]\n\nCan't wait to see you! — Sophia & the Luxe Team 💜"</span>
+      </div>
+      <button class="btn btn-rose" onclick="closeModal('lapsedModal')">Love It!</button>
+    </div>
+  </div>
+
+  <div id="contactSuccessModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-icon success"><i class="fas fa-check"></i></div>
+      <h3>Message Received!</h3>
+      <p>Thank you for reaching out. A member of our Luxe team will respond within 2 hours during business hours.</p>
+      <button class="btn btn-gold" onclick="closeModal('contactSuccessModal')"><i class="fas fa-spa"></i> Back to Site</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
